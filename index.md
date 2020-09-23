@@ -1,3 +1,4 @@
+![MY IMAGE](https://image.flaticon.com/icons/png/128/924/924874.png)
 # Farhan Karim
 
 ***Address:** 4487 2nd Avenue, Boulder, Colorado 11111*
@@ -14,6 +15,7 @@ Expert computer scientist with diverse work experience, including programming, s
 - Ph.D of Science in Computer Science,University of California **2016**
 - Masters in Computer Science,University of California **2014**
 - Bachelor of Science in Computer Science **2010**
+
 
 
 

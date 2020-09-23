@@ -7,6 +7,13 @@
 
 ## Career Objective
 
-Expert computer scientist with diverse work experience, including programming, software development, and consulting. Extensive knowledge of software development cycle as well as proficiency in several programming languages. Dedicated to meeting customer requirements with innovative solutions that maximize efficiency and exceed capability targets. Consistently use in-depth knowledge of budgetary issues affecting development and implementation to create cost-effective solutions. Comfortable discussing technical issues and solutions with scientists and analysts as well as clients
+Expert computer scientist with diverse work experience, including programming, software development, and consulting. Extensive knowledge of software development cycle as well as proficiency in several programming languages. Consistently use in-depth knowledge of budgetary issues affecting development and implementation to create cost-effective solutions. Comfortable discussing technical issues and solutions with scientists and analysts as well as clients.
+
+## Education
+
+- Ph.D of Science in Computer Science,University of California **2016**
+- Masters in Computer Science,University of California **2014**
+- Bachelor of Science in Computer Science **2010**
+
 
 

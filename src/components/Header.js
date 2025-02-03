@@ -11,7 +11,7 @@ function Header() {
     return (
         <>
                     {/* desktop nav */}
-                    <nav className="bg-gray-800 p-4 fixed w-full z-10 top-0 hidden md:flex gap-5">
+                    <nav className="bg-gray-800 p-4 fixed w-full z-10 top-0 hidden md:flex gap-5 fixed top-0 left-0 right-0 z-50">
                 <div className="max-w-5xl mx-auto flex justify-center items-center">
                     <div className="space-x-4">
                         <a href="#about" className="text-gray-400 hover:text-blue-400 transition duration-300">About</a>
@@ -27,13 +27,13 @@ function Header() {
         {nav ? (
           // close button
           <i
-            className="fixed right-[30px] fa fa-times text-3xl z-50 md:hidden"
+            className="fixed top-0 left-0 right-[30px] fa fa-times text-3xl z-50 md:hidden"
             aria-hidden="true"
             onClick={showNav}
           ></i>
         ) : (
           <i
-            className="fa fa-bars text-3xl md:hidden"
+            className="fixed top-0 left-0 fa fa-bars text-1xl md:hidden"
             aria-hidden="true"
             onClick={showNav}
           ></i>
@@ -79,6 +79,25 @@ function Header() {
                     </a>
                 </p>
             </header>
+            <style>{`
+      .hideMenuNav {
+        display: none;
+      }
+      .showMenuNav {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background: white;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+    `}</style>
         </>
     );
 }

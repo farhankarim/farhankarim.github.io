@@ -3,62 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Farhan Karim's portfolio showcasing skills, experience, and projects in software engineering.">
     <title>Farhan Karim - AI Engineer Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gudea:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-900 text-white">
+<body class="bg-gray-900 text-white gudea-regular">
     <header class="text-center py-10">
         <h1 class="text-5xl font-bold text-blue-400">Farhan Karim</h1>
-        <p class="text-lg text-gray-400">Software Engineer | AI Enthusiast | Educator</p>
+        <p class="text-lg text-gray-400">Software Engineer</p>
+        <p class="text-gray-400 mt-2">
+            <a href="mailto:farhankarimcs@hotmail.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i> farhankarimcs@hotmail.com</a>
+            <i class="fas fa-phone ml-4"></i> +92 315 2063180 
+            <i class="fas fa-map-marker-alt ml-4"></i> Karachi, Pakistan 
+            <a href="https://www.linkedin.com/in/farhan-karim/" target="_blank" rel="noopener noreferrer">
+            <i class="ml-4 fab fa-linkedin"></i> https://www.linkedin.com/in/farhan-karim/
+            </a>
+        </p>
     </header>
     
-    <section class="max-w-5xl mx-auto px-6">
+    <section class="max-w-5xl mx-auto px-6 ">
         <h2 class="text-3xl font-semibold text-blue-300">About Me</h2>
-        <p class="mt-4 text-gray-300">I am a software engineer specializing in AI and backend development, with experience in PHP, JavaScript, Python, and frameworks like Laravel, Flask, and Node.js.</p>
+        <p class="mt-4 text-gray-300">As a software engineer at UHF Solutions, I develop and maintain web applications using PHP. I also have experience in teaching and instructing programming languages and frameworks, such as Python, R, and Laravel, at Aptech Pakistan and Mindscape Technologies. Additionally, I have completed multiple certifications in data science and web development from DataCamp and IBM. With a master's degree in computer science at MAJU. I am passionate about learning new technologies and collaborating with diverse and talented teams.</p>
     </section>
 
     <section class="max-w-5xl mx-auto px-6 mt-10">
-        <h2 class="text-3xl font-semibold text-blue-300">Skills</h2>
+        <h2 class="text-3xl font-semibold text-blue-300">Skills and Interests</h2>
         <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4">
-            <span class="bg-gray-800 p-3 rounded-lg">PHP & Laravel</span>
-            <span class="bg-gray-800 p-3 rounded-lg">JavaScript & React.js</span>
-            <span class="bg-gray-800 p-3 rounded-lg">Python & Flask</span>
-            <span class="bg-gray-800 p-3 rounded-lg">SQL & Databases</span>
-            <span class="bg-gray-800 p-3 rounded-lg">AI & NLP</span>
-            <span class="bg-gray-800 p-3 rounded-lg">REST APIs</span>
+            <div class="bg-gray-800 p-3 rounded-lg text-center hover:bg-blue-500 transition duration-300">PHP & Laravel</div>
+            <div class="bg-gray-800 p-3 rounded-lg text-center hover:bg-blue-500 transition duration-300">JavaScript & React.js</div>
+            <div class="bg-gray-800 p-3 rounded-lg text-center hover:bg-blue-500 transition duration-300">Python & Flask</div>
+            <div class="bg-gray-800 p-3 rounded-lg text-center hover:bg-blue-500 transition duration-300">SQL & Databases</div>
+            <div class="bg-gray-800 p-3 rounded-lg text-center hover:bg-blue-500 transition duration-300">AI & NLP</div>
+            <div class="bg-gray-800 p-3 rounded-lg text-center hover:bg-blue-500 transition duration-300">REST APIs</div>
+        </div>
+    </section>
+
+    <section class="max-w-5xl mx-auto px-6 mt-10">
+        <h2 class="text-3xl font-semibold text-blue-300">Education</h2>
+        <div class="mt-4 space-y-6">
+            <div class="">
+                <h3 class="text-xl font-bold">Muhammad Ali Jinnah University, Karachi</h3>
+                <p class="text-gray-400">Master of Science in Computer Science, 2021 - 2023</p>
+            </div>
+            <div class="">
+                <h3 class="text-xl font-bold">Bahria University, Karachi</h3>
+                <p class="text-gray-400">Bachelor of Science in Computer Science, 2014 - 2018</p>
+            </div>
         </div>
     </section>
 
     <section class="max-w-5xl mx-auto px-6 mt-10">
         <h2 class="text-3xl font-semibold text-blue-300">Experience</h2>
         <div class="mt-4 space-y-6">
-            <div class="bg-gray-800 p-4 rounded-lg">
-                <h3 class="text-xl font-bold">Software Engineer - UHF Solutions</h3>
-                <p class="text-gray-400">Developed an NLP module for screening emails for bank employees.</p>
+            <div class="">
+                <h3 class="text-xl font-bold">Software Engineer - UHF Solutions, Karachi (Oct 2023 – Present)</h3>
+                <ul class="list-disc list-inside text-gray-400">
+                    <li>Development and customization of CRM and CMS modules serving premier banks in Pakistan.</li>
+                    <li>Collaborated with cross-functional teams, including business analysts, project managers, and end-users, to gather comprehensive requirements and translate them into actionable features.</li>
+                    <li>Coordinated with system administrators and IT infrastructure teams to ensure smooth system integration and performance optimization.</li>
+                </ul>
             </div>
-            <div class="bg-gray-800 p-4 rounded-lg">
-                <h3 class="text-xl font-bold">Software Engineer - Wavetec Pvt Ltd</h3>
-                <p class="text-gray-400">Worked on backend solutions and API integrations.</p>
+            <div class="">
+                <h3 class="text-xl font-bold">Software Engineer - Wavetec, Karachi (Jul 2022 – Sep 2023)</h3>
+                <ul class="list-disc list-inside text-gray-400">
+                    <li>Developing and maintaining the in-house ERP system serving over 200+ users across 6 different companies.</li>
+                    <li>Implemented 50+ modules/reports improving the overall user experience and productivity of users.</li>
+                    <li>Troubleshooting and resolving software defects and issues posted on ostickets on a daily basis.</li>
+                </ul>
+            </div>
+            <div class="">
+                <h3 class="text-xl font-bold">Associate Faculty - Aptech Computer Education, Karachi (Nov 2019 – June 2022)</h3>
+                <ul class="list-disc list-inside text-gray-400">
+                    <li>Taught Certificate of Proficiency in Information Systems Management (CPISM), Diploma in Information Systems Management (DISM), Higher Diploma in Software Engineering (HDSE I & II).</li>
+                    <li>Conducted lectures and delivered course materials to students.</li>
+                    <li>Assisted students with their projects and graded assignments/quizzes.</li>
+                    <li>Organized workshops on emerging technologies.</li>
+                </ul>
+            </div>
+            <div class="">
+                <h3 class="text-xl font-bold">Laravel Developer (Remote) - AKDN, Karachi (Apr 2019 – Jul 2019)</h3>
+                <ul class="list-disc list-inside text-gray-400">
+                    <li>Developed an e-health application as a solo developer for a controlled trial of pregnant women worldwide funded by Aga Khan University Hospital with over 300 participants.</li>
+                    <li>Through this application the users reported their diet, supplement use and physical activity which recommended them further actions based on their data.</li>
+                    <li>Designed REST APIs for easy transition from web-based application into a hybrid mobile application.</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <section class="max-w-5xl mx-auto px-6 mt-10">
-        <h2 class="text-3xl font-semibold text-blue-300">Projects</h2>
-        <div class="mt-4 space-y-6">
-            <div class="bg-gray-800 p-4 rounded-lg">
-                <h3 class="text-xl font-bold">AI-Based Email Screening</h3>
-                <p class="text-gray-400">Built an NLP system to classify emails based on priority and content.</p>
-            </div>
-            <div class="bg-gray-800 p-4 rounded-lg">
-                <h3 class="text-xl font-bold">Dynamic Form Builder</h3>
-                <p class="text-gray-400">Developed a web-based tool to generate JSON dynamically from HTML inputs.</p>
-            </div>
-        </div>
-    </section>
+   
 
     <footer class="text-center py-10 mt-10">
-        <p class="text-gray-500">&copy; 2025 Farhan Karim | <a href="#" class="text-blue-400">LinkedIn</a> | <a href="#" class="text-blue-400">GitHub</a></p>
+        <p class="text-gray-500">&copy; 2025 Farhan Karim | <a href="https://www.linkedin.com/in/farhankarim" class="text-blue-400" target="_blank" rel="noopener noreferrer">LinkedIn</a> | <a href="https://github.com/farhankarim" class="text-blue-400" target="_blank" rel="noopener noreferrer">GitHub</a></p>
     </footer>
 </body>
 </html>

@@ -33,7 +33,7 @@ function Header() {
           ></i>
         ) : (
           <i
-            className="fixed top-0 left-0 fa fa-bars text-1xl md:hidden"
+            className="fixed top-1 left-1 fa fa-bars text-1xl md:hidden"
             aria-hidden="true"
             onClick={showNav}
           ></i>
@@ -45,19 +45,22 @@ function Header() {
             nav ? "right-[0px]" : "right-[-100vw]"
           } `}
         >
-             <a href="#"  onClick={showNav} className="text-gray-400 hover:text-blue-400 transition duration-300">
+             <a href="#about"  onClick={showNav} className="text-gray-400 hover:text-blue-400 transition duration-300">
             Home
           </a>
           <a href="#about"  onClick={showNav} className="text-gray-400 hover:text-blue-400 transition duration-300">
             About
           </a>
-          <a href="#skills" className="text-gray-400 hover:text-blue-400 transition duration-300">
+          <a href="#skills" onClick={showNav} className="text-gray-400 hover:text-blue-400 transition duration-300">
             Skills
           </a>
           <a href="#education"  onClick={showNav} className="text-gray-400 hover:text-blue-400 transition duration-300">
             Education
           </a>
           <a href="#experience"  onClick={showNav} className="text-gray-400 hover:text-blue-400 transition duration-300">
+            Experience
+          </a>
+          <a href="#projects"  onClick={showNav} className="text-gray-400 hover:text-blue-400 transition duration-300">
             Projects
           </a>
          
@@ -80,25 +83,7 @@ function Header() {
                     </a>
                 </p>
             </header>
-            <style>{`
-      .hideMenuNav {
-        display: none;
-      }
-      .showMenuNav {
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 100vh;
-        top: 0;
-        left: 0;
-        background: white;
-        z-index: 10;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-      }
-    `}</style>
+
         </>
     );
 }

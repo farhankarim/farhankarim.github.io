@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useState } from "react";
 
 function Header() {
+
+    const [nav, setNav] = useState(false);
+
+    const showNav = () => {
+      setNav(!nav);
+    };
+
     return (
         <>
-            <nav className="bg-gray-800 p-4 fixed w-full z-10 top-0">
+                    {/* desktop nav */}
+                    <nav className="bg-gray-800 p-4 fixed w-full z-10 top-0 hidden md:flex gap-5">
                 <div className="max-w-5xl mx-auto flex justify-center items-center">
                     <div className="space-x-4">
                         <a href="#about" className="text-gray-400 hover:text-blue-400 transition duration-300">About</a>
@@ -14,6 +22,45 @@ function Header() {
                     </div>
                 </div>
             </nav>
+
+        {/* hamburger */}
+        {nav ? (
+          // close button
+          <i
+            className="fixed right-[30px] fa fa-times text-3xl z-50 md:hidden"
+            aria-hidden="true"
+            onClick={showNav}
+          ></i>
+        ) : (
+          <i
+            className="fa fa-bars text-3xl md:hidden"
+            aria-hidden="true"
+            onClick={showNav}
+          ></i>
+        )}
+
+        {/* mobile nav */}
+        <nav
+          className={`h-[100vh] fixed top-[0px] flex flex-col justify-around items-center w-full md:hidden bg-gray-800 z-40 duration-1000 ${
+            nav ? "right-[0px]" : "right-[-100vw]"
+          } `}
+        >
+          <a href="#about"  onClick={showNav} className="text-gray-400 hover:text-blue-400 transition duration-300">
+            Home
+          </a>
+          <a href="#skills" className="text-gray-400 hover:text-blue-400 transition duration-300">
+            About
+          </a>
+          <a href="#education"  onClick={showNav} className="text-gray-400 hover:text-blue-400 transition duration-300">
+            Contact
+          </a>
+          <a href="#experience"  onClick={showNav} className="text-gray-400 hover:text-blue-400 transition duration-300">
+            Address
+          </a>
+          <a href="#projects"  onClick={showNav} className="text-gray-400 hover:text-blue-400 transition duration-300">
+            Policy
+          </a>
+        </nav>
             <header className="text-center py-20 mt-16">
                 <h1 className="text-5xl font-bold text-blue-400">Farhan Karim</h1>
                 <p className="text-lg text-gray-400">Software Engineer</p>

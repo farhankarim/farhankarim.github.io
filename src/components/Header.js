@@ -45,21 +45,22 @@ function Header() {
             nav ? "right-[0px]" : "right-[-100vw]"
           } `}
         >
-          <a href="#about"  onClick={showNav} className="text-gray-400 hover:text-blue-400 transition duration-300">
+             <a href="#"  onClick={showNav} className="text-gray-400 hover:text-blue-400 transition duration-300">
             Home
           </a>
-          <a href="#skills" className="text-gray-400 hover:text-blue-400 transition duration-300">
+          <a href="#about"  onClick={showNav} className="text-gray-400 hover:text-blue-400 transition duration-300">
             About
           </a>
+          <a href="#skills" className="text-gray-400 hover:text-blue-400 transition duration-300">
+            Skills
+          </a>
           <a href="#education"  onClick={showNav} className="text-gray-400 hover:text-blue-400 transition duration-300">
-            Contact
+            Education
           </a>
           <a href="#experience"  onClick={showNav} className="text-gray-400 hover:text-blue-400 transition duration-300">
-            Address
+            Projects
           </a>
-          <a href="#projects"  onClick={showNav} className="text-gray-400 hover:text-blue-400 transition duration-300">
-            Policy
-          </a>
+         
         </nav>
             <header className="text-center py-20 mt-16">
                 <h1 className="text-5xl font-bold text-blue-400">Farhan Karim</h1>

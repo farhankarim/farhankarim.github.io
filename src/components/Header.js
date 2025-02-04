@@ -27,7 +27,7 @@ function Header() {
         {nav ? (
           // close button
           <i
-            className="fixed top-0 left-0 right-[30px] fa fa-times text-3xl z-50 md:hidden"
+            className="fixed top-1 left-1 right-[30px] fa fa-times text-3xl z-50 md:hidden"
             aria-hidden="true"
             onClick={showNav}
           ></i>

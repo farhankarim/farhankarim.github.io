@@ -19,7 +19,7 @@ function MainContent() {
                 <h2 className="text-3xl font-semibold text-blue-300">Skills and Interests</h2>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4">
                     <div
-                        className="bg-gray-800 p-3 rounded-lg text-center transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500">
+                        className="bg-gray-800 p-3 rounded-lg text-center hover:bg-blue-500 transition duration-300">
                         PHP & Laravel</div>
                     <div className="bg-gray-800 p-3 rounded-lg text-center hover:bg-blue-500 transition duration-300">JavaScript &
                         React.js</div>

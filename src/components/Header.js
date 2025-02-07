@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars, faTimes } from '@fortawesome/fontawesome-free-solid'
 
 function Header() {
 
@@ -27,16 +29,16 @@ function Header() {
         {nav ? (
           // close button
           <i
-            className="fixed top-1 left-1 right-[30px] fa fa-times text-3xl z-50 md:hidden"
+            className="fixed top-1 left-1 right-[30px] text-1xl z-50 md:hidden"
             aria-hidden="true"
             onClick={showNav}
-          ></i>
+          ><FontAwesomeIcon icon={faTimes} /></i>
         ) : (
           <i
-            className="fixed top-1 left-1 fa fa-bars text-1xl md:hidden"
+            className="fixed top-1 left-1 text-1xl md:hidden"
             aria-hidden="true"
             onClick={showNav}
-          ></i>
+          ><FontAwesomeIcon icon={faBars} /></i>
         )}
 
         {/* mobile nav */}
